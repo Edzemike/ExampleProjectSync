@@ -1,0 +1,24 @@
+{
+  "tests": "./features/*_test.js",
+  "timeout": 10000,
+  "output": "./output",
+  "helpers": {
+    "WebDriverIO" : {
+        "smartWait": 5000,
+        "url": "https://github.com",
+        "browser": "chrome",
+        "restart": false,
+        "windowSize": "maximize",
+        "timeouts": {
+          "script": 60000,
+          "page load": 10000
+        }
+      }
+  },
+  "include": {
+    "I": "./custom_steps/steps_file.js"
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "demo_project"
+}
